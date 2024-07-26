@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates xml:space="preserve">
+    <t t-name="g2p_auth_id_oidc.reg_id_auth_status">
+        <t t-if="widget.showWidget">
+            <div>
+                <div t-att-class="widget.statusClass">
+                    <t t-out="widget.renderStatus()" />
+                </div>
+                <button t-att-class="widget.buttonClass">
+                    Authenticate
+                </button>
+            </div>
+        </t>
+    </t>
+</templates>
